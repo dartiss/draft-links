@@ -1,13 +1,13 @@
 <?php
 /**
-Plugin Name: Show Drafts
-Description: Description.
+Plugin Name: Draft Links
+Description: 📝 Add menu links that take you straight to your drafts.
 Version: 0.1
 Author: David Artiss
 Author URI: https://artiss.blog
-Text Domain: show-drafts
+Text Domain: draft-links
 
-@package show-drafts
+@package draft-links
  */
 
 /**
@@ -19,23 +19,23 @@ Text Domain: show-drafts
  * @param    string $file   File in use.
  * @return   string         Links, now with settings added.
  */
-function show_drafts_plugin_meta( $links, $file ) {
+function draft_links_plugin_meta( $links, $file ) {
 
-	if ( false !== strpos( $file, 'show_drafts.php' ) ) {
+	if ( false !== strpos( $file, 'draft-links.php' ) ) {
 
 		$links = array_merge(
 			$links,
-			array( '<a href="https://github.com/dartiss/show-drafts">' . __( 'Github', 'show_drafts' ) . '</a>' ),
-			array( '<a href="https://wordpress.org/support/plugin/show-drafts">' . __( 'Support', 'show_drafts' ) . '</a>' ),
-			array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'show_drafts' ) . '</a>' ),
-			array( '<a href="https://wordpress.org/support/plugin/show-drafts/reviews/#new-post">' . __( 'Write a Review', 'show_drafts' ) . '&nbsp;⭐️⭐️⭐️⭐️⭐️</a>' ),
+			array( '<a href="https://github.com/dartiss/draft-links">' . __( 'Github', 'draft_links' ) . '</a>' ),
+			array( '<a href="https://wordpress.org/support/plugin/draft-links">' . __( 'Support', 'draft_links' ) . '</a>' ),
+			array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'draft_links' ) . '</a>' ),
+			array( '<a href="https://wordpress.org/support/plugin/draft-links/reviews/#new-post">' . __( 'Write a Review', 'draft_links' ) . '&nbsp;⭐️⭐️⭐️⭐️⭐️</a>' ),
 		);
 	}
 
 	return $links;
 }
 
-add_filter( 'plugin_row_meta', 'show_drafts_plugin_meta', 10, 2 );
+add_filter( 'plugin_row_meta', 'draft_links_plugin_meta', 10, 2 );
 
 /**
  * Add drafts to menu
@@ -51,26 +51,26 @@ function add_drafts_to_menu() {
 	$all_posts = count_all_drafts( 'post' );
 	if ( $all_posts > 0 ) {
 
-		add_submenu_page( 'edit.php', '', __( 'All Drafts', 'show-drafts' ) . ' <span class=\'update-plugins count-' . $all_posts . '\'><span class=\'update-count\'>' . $all_posts . '</span></span>', 'edit_posts', esc_url( 'edit.php?post_status=draft&post_type=post' ) );
+		add_submenu_page( 'edit.php', '', __( 'All Drafts', 'draft-links' ) . ' <span class=\'update-plugins count-' . $all_posts . '\'><span class=\'update-count\'>' . $all_posts . '</span></span>', 'edit_posts', esc_url( 'edit.php?post_status=draft&post_type=post' ) );
 
 		// Get total number of draft posts for current user. If more than zero add a sub-menu option.
 
 		$your_posts = count_my_drafts( 'post', $author );
 		if ( $your_posts > 0 && $your_posts !== $all_posts ) {
-			add_submenu_page( 'edit.php', '', __( 'My Drafts', 'show-drafts' ) . ' <span class=\'update-plugins count-' . $your_posts . '\'><span class=\'update-count\'>' . $your_posts . '</span></span>', 'edit_posts', esc_url( 'edit.php?post_status=draft&post_type=post&author=' . $author . '' ) );
+			add_submenu_page( 'edit.php', '', __( 'My Drafts', 'draft-links' ) . ' <span class=\'update-plugins count-' . $your_posts . '\'><span class=\'update-count\'>' . $your_posts . '</span></span>', 'edit_posts', esc_url( 'edit.php?post_status=draft&post_type=post&author=' . $author . '' ) );
 		}
 	}
 
 	$all_pages = count_all_drafts( 'page' );
 	if ( $all_pages > 0 ) {
 
-		add_submenu_page( 'edit.php?post_type=page', '', __( 'All Drafts', 'show-drafts' ) . ' <span class=\'update-plugins\'><span class=\'update-count\'>' . $all_pages . '</span></span>', 'edit_pages', esc_url( 'edit.php?post_status=draft&post_type=page' ) );
+		add_submenu_page( 'edit.php?post_type=page', '', __( 'All Drafts', 'draft-links' ) . ' <span class=\'update-plugins\'><span class=\'update-count\'>' . $all_pages . '</span></span>', 'edit_pages', esc_url( 'edit.php?post_status=draft&post_type=page' ) );
 
 		// Get total number of draft pages for current user. If more than zero add a sub-menu option.
 
 		$your_pages = count_my_drafts( 'page', $author );
 		if ( $your_pages > 0 && $your_pages !== $all_pages ) {
-			add_submenu_page( 'edit.php?post_type=page', '', __( 'My Drafts', 'show-drafts' ) . ' <span class=\'update-plugins\'><span class=\'update-count\'>' . $your_pages . '</span></span>', 'edit_pages', esc_url( 'edit.php?post_status=draft&post_type=page&author=' . $author . '' ) );
+			add_submenu_page( 'edit.php?post_type=page', '', __( 'My Drafts', 'draft-links' ) . ' <span class=\'update-plugins\'><span class=\'update-count\'>' . $your_pages . '</span></span>', 'edit_pages', esc_url( 'edit.php?post_status=draft&post_type=page&author=' . $author . '' ) );
 		}
 	}
 }
