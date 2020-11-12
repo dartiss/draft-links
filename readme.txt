@@ -2,7 +2,7 @@
 Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: drafts, link, list, menu, reveal, show
-Requires at least: 2.5
+Requires at least: 4.6
 Tested up to: 5.5
 Requires PHP: 5.3
 Stable tag: 1.0
