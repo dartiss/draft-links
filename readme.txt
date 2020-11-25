@@ -1,7 +1,7 @@
 === Draft Links ===
 Contributors: dartiss
 Donate link: https://artiss.blog/donate
-Tags: drafts, link, list, menu, reveal, show
+Tags: draft, link, menu, page, post
 Requires at least: 4.6
 Tested up to: 5.6
 Requires PHP: 5.3
@@ -33,12 +33,6 @@ Draft Links can be found and installed via the Plugin menu within WordPress admi
 == Screenshots ==
 
 1. An example of how the links are shown in the menu
-
-== Frequently Asked Questions ==
-
-= A question =
-
-An answer.
 
 == Changelog ==
 
