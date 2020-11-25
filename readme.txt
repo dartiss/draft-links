@@ -3,7 +3,7 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: drafts, link, list, menu, reveal, show
 Requires at least: 4.6
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 5.3
 Stable tag: 1.0
 License: GPLv2 or later
@@ -19,7 +19,7 @@ Just install and enable - there are no settings.
 
 The code passes [WordPress](https://github.com/WordPress/WordPress-Coding-Standards) and [WordPress VIP](https://github.com/Automattic/VIP-Coding-Standards) coding standards 🎉
 
-Iconography is courtesy of the very talented [Janki Rathod](https://www.linkedin.com/in/jankirathore/) ♥️
+Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore) ♥️
 
 👉 Please visit the [Github page](https://github.com/dartiss/draft-links "Github") for the latest code development, planned enhancements and known issues 👈
 
@@ -42,7 +42,7 @@ An answer.
 
 == Changelog ==
 
-I use symantic versioning, with the first release being 1.0.
+I use semantic versioning, with the first release being 1.0.
 
 = 1.0 =
 * Initial release
