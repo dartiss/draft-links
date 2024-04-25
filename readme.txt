@@ -3,13 +3,13 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: draft, link, menu, page, post
 Requires at least: 4.6
-Tested up to: 6.3
+Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-📝 Add menu links that take you straight to your drafts.
+Add menu links that take you straight to your drafts.
 
 == Description ==
 
@@ -19,9 +19,9 @@ Just install and enable - there are no settings.
 
 The code passes [WordPress](https://github.com/WordPress/WordPress-Coding-Standards) and [WordPress VIP](https://github.com/Automattic/VIP-Coding-Standards) coding standards 🎉
 
-Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore) ♥️
+Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore).
 
-👉 Please visit the [Github page](https://github.com/dartiss/draft-links "Github") for the latest code development, planned enhancements and known issues 👈
+**Please visit the [Github page](https://github.com/dartiss/draft-links "Github") for the latest code development, planned enhancements and known issues**
 
 == Installation ==
 
@@ -38,10 +38,14 @@ Draft Links can be found and installed via the Plugin menu within WordPress admi
 
 I use semantic versioning, with the first release being 1.0.
 
+= 1.1 =
+* Enhancement: Split plugin into separate files to make management easier
+* Enhancement: Assorted code quality improvements to go along with this. Nothing visible, though
+
 = 1.0 =
 * Initial release
 
 == Upgrade Notice ==
 
-= 1.0 =
-* Initial release
+= 1.1 =
+* Code quality improvements
