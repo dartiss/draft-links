@@ -1,6 +1,6 @@
 # Draft Links
 
-<img src="https://ps.w.org/draft-links/assets/icon-128x128.png" align="left">Making it easier for you to access your drafts, this plugin will add links to the WP Admin menu to both yours and all drafts post and pages. Oh, and it will also show you how many drafts there are too.
+<img src="https://ps.w.org/draft-links/assets/icon.svg" width=128px align="left" style="padding: 0 20px 20px 0;">Making it easier for you to access your drafts, this plugin will add links to the WP Admin menu to both yours and all drafts post and pages. Oh, and it will also show you how many drafts there are too.
 
 Just install and enable - there are no settings.
 
