@@ -3,7 +3,7 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: draft, link, menu, page, post
 Requires at least: 4.6
-Tested up to: 6.5
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 1.1
 License: GPLv2 or later
@@ -29,6 +29,12 @@ Draft Links can be found and installed via the Plugin menu within WordPress admi
 
 1. Upload the entire `draft-links` folder to your `wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress administration.
+
+== Frequently Asked Questions ==
+
+= Do you support this plugin on forks of WordPress? =
+
+No. It was developed for WordPress and so forks remain unsupported. I have no intention of developing and testing this on any other version.
 
 == Screenshots ==
 
